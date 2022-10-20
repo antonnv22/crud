@@ -11,7 +11,7 @@ docker-start:
 	docker-compose up -d
 
 k8s-deploy:
-#	kubectl create ns crud
+	kubectl create ns crud
 	cd .. && helm upgrade --install -n crud crud .\crud-chart
 
 newman:
