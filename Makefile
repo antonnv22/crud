@@ -1,11 +1,10 @@
 .PHONY: build
 
-
 build:
-	docker build  -f Dockerfile . -t antonnv22/crud:0.0.60
+	docker build  -f Dockerfile . -t antonnv22/crud:0.0.61
 
 push:
-	docker push antonnv22/crud:0.0.60
+	docker push antonnv22/crud:0.0.61
 
 docker-start:
 	docker-compose up -d
